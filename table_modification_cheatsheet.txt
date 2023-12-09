@@ -1,0 +1,20 @@
+To Alter(add) a column:
+
+ALTER TABLE <tablename> ADD (<colummnname> INT, <colummnname> varchar(50) );
+
+To Alter(delete) a column:
+
+ALTER TABLE <tablename> DROP COLUMN <colummnname>;
+
+To Modiy a certain column:
+
+ALTER TABLE <tablename> MODIFY <colummnname> INT/varchar(50)/...;
+
+
+Insert rows into a table:
+
+INSERT INTO table_name(colummn1_name, colummn2_name, colummn3_name) VALUES (value1, value2, value3), (value4, value5, value6);   // Each set of values in round brackets adds another set of rows
+
+Display contents of database:
+
+SELECT * FROM <table name>;
