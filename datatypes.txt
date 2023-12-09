@@ -1,0 +1,17 @@
+DECIMAL : stores decimal values
+
+INT : Stores integer values positive or negative
+
+TINYINT: Stores integer values up to 255
+
+CHAR: Stores fixed number of characters(e.g. writing Hi in char(15) would store "Hi                 "). It's good when there is fixed number of characters.
+
+VARCHAR: Stores variable number of characters up to a certain limit (eg. writing Hi in varchar(25) would store "Hi")
+
+TINYTEXT: Used to store less than 255 characters
+
+TEXT: Used to define text of up to 65,000 charachters
+
+MEDIUMTEXT: Stores 16.7 million characters
+
+LONGTEXT: Stores 4 gigabytes of text data
