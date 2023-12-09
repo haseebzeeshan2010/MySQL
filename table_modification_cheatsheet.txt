@@ -8,13 +8,23 @@ ALTER TABLE <tablename> DROP COLUMN <colummnname>;
 
 To Modiy a certain column:
 
-ALTER TABLE <tablename> MODIFY <colummnname> INT/varchar(50)/...;
+ALTER TABLE <tablename> MODIFY <columnname> INT/varchar(50)/...;
 
 
 Insert rows into a table:
 
-INSERT INTO table_name(colummn1_name, colummn2_name, colummn3_name) VALUES (value1, value2, value3), (value4, value5, value6);   // Each set of values in round brackets adds another set of rows
+INSERT INTO table_name(column1_name, column2_name, column3_name) VALUES (value1, value2, value3), (value4, value5, value6);   // Each set of values in round brackets adds another set of rows
+
+Insert a column from one table into another:
+
+INSERT INTO <target_table> (column_name) SELECT column_name FROM <source_table>;
+
 
 Display contents of database:
 
-SELECT * FROM <table name>;
+SELECT * FROM <table name>;  //Shows rows and columns of entire table
+
+SELECT <column_name> FROM <table>; //Shows the contents of a column in a table
+
+SELECT <column_name>,<column2_name> FROM <table>; //Shows the contents of multiple columns in a table
+
