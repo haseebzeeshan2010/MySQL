@@ -15,7 +15,7 @@ Insert rows into a table:
 
 INSERT INTO table_name(column1_name, column2_name, column3_name) VALUES (value1, value2, value3), (value4, value5, value6);   // Each set of values in round brackets adds another set of rows
 
-Insert a column from one table into another:
+Insert a column from one table into another(INSERT INTO SELECT statement):
 
 INSERT INTO <target_table> (column_name) SELECT column_name FROM <source_table>;
 
