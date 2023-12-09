@@ -1,0 +1,28 @@
+Instructions to make cm_devices.sql:
+
+#enter mysql cli
+sudo mysql -u root
+
+#create database
+create database cm_devices;
+
+#use database
+use cm_devices;
+
+#Create table
+CREATE TABLE devices( deviceID int, deviceName varchar(50), price decimal);
+
+#Show all databases
+show databases;
+
+#show table
+show columns from devices;
+
+#exit MySQL CLI
+exit
+
+#enter root
+sudo -i
+
+#Create mysql file   mysqldump <database_name> > <filename>.sql
+mysqldump cm_devices > cm_devices.sql
