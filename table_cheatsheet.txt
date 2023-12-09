@@ -1,0 +1,11 @@
+To Alter(add) a column:
+
+ALTER TABLE <tablename> ADD (<colummnname> INT, <colummnname> varchar(50) )
+
+To Alter(delete) a column:
+
+ALTER TABLE <tablename> DROP COLUMN <colummnname> 
+
+To Modiy a certain column:
+
+ALTER TABLE <tablename> <colummnname> INT/varchar(50)/...
