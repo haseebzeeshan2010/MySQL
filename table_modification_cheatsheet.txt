@@ -2,10 +2,10 @@ To Alter(add) a column:
 
 ALTER TABLE <tablename> ADD (<colummnname> INT, <colummnname> varchar(50) );
 
-
 Add record(row) into a table:
 
 INSERT INTO table_name(column1_name, column2_name, column3_name) VALUES (value1, value2, value3), (value4, value5, value6);   // Each set of values in round brackets adds another set of rows
+
 
 
 
@@ -13,14 +13,13 @@ To Alter(delete) a column:
 
 ALTER TABLE <tablename> DROP COLUMN <colummnname>;
 
-
 To delete a certain record(row):
 
 DELETE FROM <table> WHERE <column1_name> = <column1_value>;
 
 To delete all records from table:
 
-DELETE FROM <table>
+DELETE FROM <table>         or             TRUNCATE <table>
 
 
 
