@@ -22,4 +22,4 @@ DATE: Stores dates
 
 Default values(goes within CREATE TABLE):
 
-<colummnname> (optional)<datatype> DEFAULT <value>(e.g "Harrow")
+CREATE TABLE <tablename> (<columnname> <datatype> DEFAULT <value>(e.g "Harrow"), ...)
