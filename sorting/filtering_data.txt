@@ -1,0 +1,11 @@
+To order a single column in ascending or descending order:
+
+SELECT column1, column2, column3 ...
+FROM <table_name>
+ORDER BY <column_name> ASC;       or       DESC;
+
+To order multiple columns in ascending or descending order:
+
+SELECT column1, column2, column3 ...
+FROM <table_name>
+ORDER BY <column1> ASC/DESC, <column2> ASC/DESC;

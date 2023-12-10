@@ -1,3 +1,11 @@
+Operators can be used to:
+
+1. Filter data
+2. Include data
+3. Exclude data
+
+
+
 SELECT 5 + 5;
 
 SELECT 5 - 5;
@@ -24,10 +32,3 @@ SELECT * FROM employee WHERE salary + allowance = 25000; //Retrieves the records
 Or to calculate and then retrieve the calculated value
 
 SELECT salary - tax FROM employee;  //Calculates a value from two columns and then deisplays the calculated result for each row
-
-
-Operators can be used to:
-
-1. Filter data
-2. Include data
-3. Exclude data
