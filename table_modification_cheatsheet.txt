@@ -24,12 +24,12 @@ DELETE FROM <table>         or             TRUNCATE <table>
 
 
 
-To Modiy a column's properties:
+To update a column's properties:
 
 ALTER TABLE <tablename> MODIFY <columnname> INT/varchar(50)/...;
 
 
-To modify a certain record(row) or records:
+To update a certain record(row) or records:
 
 UPDATE <table> SET <column1_name> = <column1_value> , <column2_name> = <column2_value>, <column3_name> = <column3_value> WHERE <primary_key> = <row_number>;
 
