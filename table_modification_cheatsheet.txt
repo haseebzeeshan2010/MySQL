@@ -3,9 +3,26 @@ To Alter(add) a column:
 ALTER TABLE <tablename> ADD (<colummnname> INT, <colummnname> varchar(50) );
 
 
+Add record(row) into a table:
+
+INSERT INTO table_name(column1_name, column2_name, column3_name) VALUES (value1, value2, value3), (value4, value5, value6);   // Each set of values in round brackets adds another set of rows
+
+
+
 To Alter(delete) a column:
 
 ALTER TABLE <tablename> DROP COLUMN <colummnname>;
+
+
+To delete a certain record(row):
+
+DELETE FROM <table> WHERE <column1_name> = <column1_value>;
+
+To delete all records from table:
+
+DELETE FROM <table>
+
+
 
 
 To Modiy a column's properties:
@@ -13,9 +30,11 @@ To Modiy a column's properties:
 ALTER TABLE <tablename> MODIFY <columnname> INT/varchar(50)/...;
 
 
-Insert record(row) into a table:
+To modify a certain record(row) or records:
 
-INSERT INTO table_name(column1_name, column2_name, column3_name) VALUES (value1, value2, value3), (value4, value5, value6);   // Each set of values in round brackets adds another set of rows
+UPDATE <table> SET <column1_name> = <column1_value> , <column2_name> = <column2_value>, <column3_name> = <column3_value> WHERE <primary_key> = <row_number>;
+
+
 
 
 Insert a column from one table into another(INSERT INTO SELECT statement):
@@ -23,9 +42,6 @@ Insert a column from one table into another(INSERT INTO SELECT statement):
 INSERT INTO <target_table> (column_name) SELECT column_name FROM <source_table>;
 
 
-To modify a certain record(row):
-
-UPDATE <table> SET <column1_name> = <column1_value> , <column2_name> = <column2_value>, <column3_name> = <column3_value> WHERE <primary_key> = <row_number>;
 
 
 Display contents of database:
@@ -35,4 +51,3 @@ SELECT * FROM <table name>;  //Shows rows and columns of entire table
 SELECT <column_name> FROM <table>; //Shows the contents of a column in a table
 
 SELECT <column_name>,<column2_name> FROM <table>; //Shows the contents of multiple columns in a table
-
