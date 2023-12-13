@@ -1,11 +1,56 @@
+By defalt, ORDER BY orders in ascending order
+
 To order a single column in ascending or descending order:
 
 SELECT column1, column2, column3 ...
 FROM <table_name>
 ORDER BY <column_name> ASC;       or       DESC;
 
-To order multiple columns in ascending or descending order:
+
+
+To order multiple columns seperately in ascending or descending order:
 
 SELECT column1, column2, column3 ...
 FROM <table_name>
 ORDER BY <column1> ASC/DESC, <column2> ASC/DESC;
+
+
+
+To take multiple columns into account for either ascending or descending order when displaying a table
+
+SELECT *
+FROM <table_name>
+ORDER BY <column1>, <column2>      or     <column1> DESC, <column2> DESC;
+
+
+
+
+SELECT DISTINCT:
+
+It is used to return only a single occurence of each value when there are duplicate values. e.g.
+
+SELECT DISTINCT <table_name>
+FROM <database_name>
+
+When selecting multiple columns in a table, then it will only output unique combinations. e.g.
+
+
+SELECT DISTINCT faculty, country FROM student_tbl;
+
+
+outputs....
+
+
+faculty             country
+
+Science             USA
+Science             Australia
+Science             UK
+Engineering         China
+Engineering         UK
+Engineering         USA
+
+None of the combinations are alike
+
+
+Note that Null values count as their own unique value. So there may be combinations including Null values and some other value

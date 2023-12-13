@@ -1,0 +1,33 @@
+Table name: Chinook
+
+Task 1: Display data in customer table 
+
+SELECT CustomerID, FirstName, LastName, City, State, Country FROM Customer;
+
+Task 2: Sort the result set of data by FirstName
+
+SELECT CustomerID, FirstName, LastName, City, State, Country 
+FROM Customer 
+ORDER BY FirstName;
+
+Task 3: Filter the result set of data
+
+a. Display all customers from Canada
+
+SELECT *
+FROM Customer
+WHERE Country = "Canada";
+
+b. Display all customers from Canada in alphabetical order
+
+SELECT *
+FROM Customer
+WHERE Country = "Canada"
+ORDER BY FirstName;
+
+Task 4: Display name and country of customers from Canada in alphabetical order
+
+SELECT FirstName,Country
+FROM Customer
+WHERE Country = "Canada"
+ORDER BY FirstName;
