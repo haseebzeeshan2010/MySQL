@@ -35,7 +35,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (1,'Jack','115 Old street Belfast'),(2,'James','24 Carlson Rd London');
+INSERT INTO `customers` VALUES (1,'Jack','115 Old street Belfast'),(2,'James','24 Carlson Rd London'),(4,'Maria','5 Fredrik Rd, Bedford'),(5,'Jade','10 Copland Ave Portsmouth ');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-09 21:11:31
+-- Dump completed on 2023-12-10 17:53:05
